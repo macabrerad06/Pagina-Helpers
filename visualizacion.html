@@ -1,23 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap Display Helpers</title>
+    <title>Helpers de Visualizacion</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
+
 <body>
-    <div class="container mt-5">
-        <h1 class="text-center">Bootstrap Display Helpers</h1>
-        <p class="d-none">This text is hidden using <code>d-none</code>.</p>
-        <p class="d-inline">This text is displayed inline using <code>d-inline</code>.</p>
-        <p class="d-block">This text is displayed as a block using <code>d-block</code>.</p>
-        <p class="d-inline-block">This text is displayed as an inline-block using <code>d-inline-block</code>.</p>
-        <p class="d-flex">This text is displayed as a flex container using <code>d-flex</code>.</p>
-        <p class="d-grid">This text is displayed as a grid container using <code>d-grid</code>.</p>
-        <p class="d-sm-none">This text is hidden on small screens using <code>d-sm-none</code>.</p>
-        <p class="d-md-block d-lg-none">This text is visible only on medium and large screens using <code>d-md-block d-lg-none</code>.</p>
+    <div class="container my-5">
+        <h1 class="text-center">Helpers de Visualizacion</h1>
+        <p class="text-secondary">Estas clases controlan cómo y cuándo se muestra un elemento.</p>
+
+        <div class="border p-3 mb-3 bg-light">
+            <p><strong>d-none:</strong> Este elemento no es visible.</p>
+            <div class="d-none border p-2">No visible</div>
+        </div>
+        <div class="border p-3 mb-3 bg-light">
+            <p><strong>d-block:</strong> Este elemento es visible como un bloque.</p>
+            <div class="d-block border p-2">Visible como bloque</div>
+        </div>
+        <div class="border p-3 mb-3 bg-light">
+            <p><strong>d-inline:</strong> Este elemento es visible en línea.</p>
+            <div class="d-inline border p-2">Visible en linea</div>
+        </div>
+        <div class="border p-3 mb-3 bg-light">
+            <p><strong>d-flex:</strong> Este elemento es un contenedor flex.</p>
+            <div class="d-flex border p-2">Contenedor flex</div>
+        </div>
+
+        <div class="border p-3 mb-3 bg-light">
+            <h5>Responsive</h5>
+            <p><strong>d-md-none d-lg-block:</strong> Este elemento está oculto en pantallas medianas (md) y visible en pantallas grandes (lg).</p>
+            <div class="d-md-none d-lg-block border p-2">Oculto en md, visible en lg</div>
+        </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

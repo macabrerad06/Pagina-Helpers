@@ -1,37 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flexbox Helpers</title>
+    <title>Helpers de Flexbox
+
+    </title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
+
 <body>
     <div class="container my-5">
         <h1 class="text-center mb-4">Bootstrap 5 Flexbox Helpers</h1>
-        
-        <!-- Flex Container -->
-        <div class="d-flex bg-light p-3 mb-3">
-            <div class="p-2 bg-primary text-white">Flex Item 1</div>
-            <div class="p-2 bg-secondary text-white">Flex Item 2</div>
-            <div class="p-2 bg-success text-white">Flex Item 3</div>
-        </div>
+        <p class="text-secondary">Bootstrap facilita el uso de Flexbox con clases para alinear y distribuir elementos en
+            contenedores flexibles.</p>
 
-        <!-- Justify Content -->
-        <div class="d-flex justify-content-between bg-light p-3 mb-3">
-            <div class="p-2 bg-primary text-white">Item 1</div>
-            <div class="p-2 bg-secondary text-white">Item 2</div>
-            <div class="p-2 bg-success text-white">Item 3</div>
+        <div class="border p-3 mb-3 bg-light">
+            <p><strong>Justifica el contenido al inicio del contenedor:</strong> (Clase: <code>justify-content-start</code>)</p>
+            <div class="d-flex justify-content-start border border-primary p-2 bg-white">
+            <span class="badge bg-primary me-2">1</span>
+            <span class="badge bg-secondary">2</span>
+            </div>
         </div>
-
-        <!-- Align Items -->
-        <div class="d-flex align-items-center bg-light p-3" style="height: 100px;">
-            <div class="p-2 bg-primary text-white">Aligned</div>
-            <div class="p-2 bg-secondary text-white">Center</div>
-            <div class="p-2 bg-success text-white">Items</div>
+        <div class="border p-3 mb-3 bg-light">
+            <p><strong>Centra el contenido horizontalmente dentro del contenedor:</strong> (Clase: <code>justify-content-center</code>)</p>
+            <div class="d-flex justify-content-center border border-primary p-2 bg-white">
+            <span class="badge bg-primary me-2">1</span>
+            <span class="badge bg-secondary">2</span>
+            </div>
+        </div>
+        <div class="border p-3 mb-3 bg-light">
+            <p><strong>Distribuye el contenido con espacio entre los elementos:</strong> (Clase: <code>justify-content-between</code>)</p>
+            <div class="d-flex justify-content-between border border-primary p-2 bg-white">
+            <span class="badge bg-primary">1</span>
+            <span class="badge bg-secondary">2</span>
+            </div>
+        </div>
+        <div class="border p-3 mb-3 bg-light">
+            <p><strong>Alinea los elementos al inicio verticalmente:</strong> (Clase: <code>align-items-start</code>)</p>
+            <div class="d-flex align-items-start border border-primary p-2 bg-white" style="height: 100px;">
+            <span class="badge bg-primary me-2">1</span>
+            <span class="badge bg-secondary">2</span>
+            </div>
+        </div>
+        <div class="border p-3 mb-3 bg-light">
+            <p><strong>Alinea los elementos al centro verticalmente:</strong> (Clase: <code>align-items-center</code>)</p>
+            <div class="d-flex align-items-center border border-primary p-2 bg-white" style="height: 100px;">
+            <span class="badge bg-primary me-2">1</span>
+            <span class="badge bg-secondary">2</span>
+            </div>
+        </div>
+        <div class="border p-3 mb-3 bg-light">
+            <p><strong>Organiza los elementos en una dirección de columna:</strong> (Clase: <code>flex-column</code>)</p>
+            <div class="d-flex flex-column border border-primary p-2 bg-white">
+            <span class="badge bg-primary mb-2">1</span>
+            <span class="badge bg-secondary">2</span>
+            </div>
         </div>
     </div>
 
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
